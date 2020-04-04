@@ -15,11 +15,13 @@ export function createStore(rootReducer, initialState) {
       // редюсер возвращает объект - получаем новое состояние,
       // прогнав его через редюсер
       state = rootReducer(state, action)
-      subscribers.forEach(sub => sub())
+      subscribers.forEach(sub => sub()) // для всех елементов вызываем функцию(которая и есть в этом массиве)
     },
+    
     subscribe(callback) {
       subscribers.push(callback)
     },
+    
     getState(){ // с помощью геттера получаем текущее состояние
       return state
     }

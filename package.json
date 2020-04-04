@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/Annsysadm/redux/issues"
   },
-  "homepage": "https://github.com/Annsysadm/redux#readme"
+  "homepage": "https://github.com/Annsysadm/redux#readme",
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
 }
